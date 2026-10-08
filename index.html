@@ -78,4 +78,114 @@
                         <i class="fa-solid fa-futbol text-2xl text-slate-950"></i>
                     </div>
                     <span class="font-display text-4xl font-bold tracking-wider bg-gradient-to-r from-white via-slate-200 to-green-400 bg-clip-text text-transparent">
-                        FUT<span
+                        FUT<span class="text-emerald-400">ZONE</span>
+                    </span>
+                </div>
+
+                <!-- Navigation Desktop -->
+                <nav class="hidden md:flex items-center space-x-1">
+                    <button onclick="switchTab('noticias')" id="nav-noticias" class="nav-btn px-4 py-2 rounded-lg text-sm font-semibold transition-all text-emerald-400 bg-slate-800">
+                        <i class="fa-solid fa-newspaper mr-2"></i>Notícias & Destaques
+                    </button>
+                    <button onclick="switchTab('tabela')" id="nav-tabela" class="nav-btn px-4 py-2 rounded-lg text-sm font-semibold text-slate-400 hover:text-white hover:bg-slate-800/50 transition-all">
+                        <i class="fa-solid fa-trophy mr-2"></i>Tabelas
+                    </button>
+                    <button onclick="switchTab('escalacao')" id="nav-escalacao" class="nav-btn px-4 py-2 rounded-lg text-sm font-semibold text-slate-400 hover:text-white hover:bg-slate-800/50 transition-all">
+                        <i class="fa-solid fa-shirt mr-2"></i>Monte seu Time
+                    </button>
+                    <button onclick="switchTab('quiz')" id="nav-quiz" class="nav-btn px-4 py-2 rounded-lg text-sm font-semibold text-slate-400 hover:text-white hover:bg-slate-800/50 transition-all">
+                        <i class="fa-solid fa-brain mr-2"></i>Quiz Raiz
+                    </button>
+                </nav>
+
+                <!-- Status ao Vivo Badge -->
+                <div class="hidden lg:flex items-center gap-2 bg-slate-800/80 border border-slate-700/60 rounded-full px-3.5 py-1.5 text-xs">
+                    <span class="relative flex h-2.5 w-2.5">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                    </span>
+                    <span class="text-slate-300 font-medium">Champions League: <strong class="text-white">2 Jogos Ao Vivo</strong></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Content Container -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-grow w-full">
+
+        <!-- Banner Placar Histórico/Ao Vivo -->
+        <section class="mb-8 overflow-x-auto pb-2">
+            <div class="flex gap-4 min-w-max">
+                <!-- Jogo 1 -->
+                <div class="bg-slate-900 border border-slate-800 hover:border-slate-700 rounded-xl p-4 w-64 transition-all">
+                    <div class="flex justify-between items-center text-xs text-slate-400 mb-2">
+                        <span>UEFA Champions League</span>
+                        <span class="text-emerald-400 font-bold flex items-center gap-1"><i class="fa-solid fa-circle text-[8px] animate-pulse"></i> 68'</span>
+                    </div>
+                    <div class="flex justify-between items-center py-1">
+                        <span class="font-semibold text-sm">Real Madrid</span>
+                        <span class="font-display text-2xl font-bold text-emerald-400">2</span>
+                    </div>
+                    <div class="flex justify-between items-center py-1">
+                        <span class="font-semibold text-sm">Manchester City</span>
+                        <span class="font-display text-2xl font-bold text-emerald-400">1</span>
+                    </div>
+                </div>
+
+                <!-- Jogo 2 -->
+                <div class="bg-slate-900 border border-slate-800 hover:border-slate-700 rounded-xl p-4 w-64 transition-all">
+                    <div class="flex justify-between items-center text-xs text-slate-400 mb-2">
+                        <span>Brasileirão Série A</span>
+                        <span class="text-slate-500 font-medium">Hoje - 21:30</span>
+                    </div>
+                    <div class="flex justify-between items-center py-1">
+                        <span class="font-semibold text-sm">Flamengo</span>
+                        <span class="font-display text-2xl font-bold text-slate-500">-</span>
+                    </div>
+                    <div class="flex justify-between items-center py-1">
+                        <span class="font-semibold text-sm">Palmeiras</span>
+                        <span class="font-display text-2xl font-bold text-slate-500">-</span>
+                    </div>
+                </div>
+
+                <!-- Jogo 3 -->
+                <div class="bg-slate-900 border border-slate-800 hover:border-slate-700 rounded-xl p-4 w-64 transition-all">
+                    <div class="flex justify-between items-center text-xs text-slate-400 mb-2">
+                        <span>Premier League</span>
+                        <span class="text-slate-400 font-medium">Encerrado</span>
+                    </div>
+                    <div class="flex justify-between items-center py-1">
+                        <span class="font-semibold text-sm">Arsenal</span>
+                        <span class="font-display text-2xl font-bold">3</span>
+                    </div>
+                    <div class="flex justify-between items-center py-1">
+                        <span class="font-semibold text-sm">Liverpool</span>
+                        <span class="font-display text-2xl font-bold">1</span>
+                    </div>
+                </div>
+
+                <!-- Jogo 4 -->
+                <div class="bg-slate-900 border border-slate-800 hover:border-slate-700 rounded-xl p-4 w-64 transition-all">
+                    <div class="flex justify-between items-center text-xs text-slate-400 mb-2">
+                        <span>Copa Libertadores</span>
+                        <span class="text-slate-500 font-medium">Amanhã - 19:00</span>
+                    </div>
+                    <div class="flex justify-between items-center py-1">
+                        <span class="font-semibold text-sm">Boca Juniors</span>
+                        <span class="font-display text-2xl font-bold text-slate-500">-</span>
+                    </div>
+                    <div class="flex justify-between items-center py-1">
+                        <span class="font-semibold text-sm">River Plate</span>
+                        <span class="font-display text-2xl font-bold text-slate-500">-</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 1: NOTÍCIAS (Padrão Ativa) -->
+        <div id="tab-noticias" class="tab-content space-y-8">
+            <!-- Hero News -->
+            <div class="relative rounded-2xl overflow-hidden group border border-slate-800 h-96 md:h-[450px]">
+                <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=1200&q=80" alt="Futebol" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-transparent flex flex-col justify-end p-6 md:p-10">
+                    <span class="inline
