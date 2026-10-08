@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutZone - O Portal Definitivo do Futebol</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500;700&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pitch: {
+                            light: '#2e7d32',
+                            DEFAULT: '#1b5e20',
+                            dark: '#0d3b11'
+                        },
+                        accent: '#ffeb3b',
+                        neon: '#00e676'
+                    },
+                    fontFamily: {
+                        display: ['Teko', 'sans-serif'],
+                        body: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* CSS Personalizado para a Prancheta Tática e Efeitos */
+        .field-pattern {
+            background-color: #1b5e20;
+            background-image: repeating-linear-gradient(
+                0deg,
+                #1b5e20,
+                #1b5e20 40px,
+                #237229 40px,
+                #237229 80px
+            );
+        }
+        .player-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .player-card:hover {
+            transform: translateY(-5px) scale(1.02);
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #334155;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-body antialiased min-h-screen flex flex-col justify-between selection:bg-neon selection:text-slate-950">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex items-center gap-3">
+                    <div class="bg-gradient-to-tr from-green-500 to-emerald-300 p-2.5 rounded-xl shadow-lg shadow-green-500/20">
+                        <i class="fa-solid fa-futbol text-2xl text-slate-950"></i>
+                    </div>
+                    <span class="font-display text-4xl font-bold tracking-wider bg-gradient-to-r from-white via-slate-200 to-green-400 bg-clip-text text-transparent">
+                        FUT<span
